@@ -6,3 +6,33 @@ body{
 strong{
     color: aqua;
 }
+
+.body-azulcinza{
+    background: #E8F1F2;
+}
+
+.body-azul{
+    background: #C8ECF5;
+   
+}
+
+.button-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 320px;
+    height: 68px;
+
+    
+    background: #29A0C1;
+    border-radius: 20px;
+    border-style: none;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
