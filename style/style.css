@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 body{
-    background-color: #E8F1F2; 
+    background: #E8F1F2;
     height: 100vh;
     box-sizing: border-box;
   
@@ -28,10 +28,14 @@ strong{
     width: 707px;
     height: 905px;
 }
- 
-.body-azulclaro{
-    background: #E8F1F2;
+.loguit{
+    background: url(Loguit.jpg);
+    mix-blend-mode: multiply;
+    width: 400px;
+    height: 150px;
+
 }
+ 
 
 .body-azul{
     background: #C8ECF5;
