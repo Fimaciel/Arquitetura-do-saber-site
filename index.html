@@ -12,20 +12,25 @@
     <header>Cabeçalho</header>
     <main>
       <!---- capa home --->
-      <div class="body-azulclaro">
-        <h1></h1>
-        <img src="" alt="capa" />
-      </div>
-      <!---- titulo--->
-      <section class="body-azulclaro">
-        <div class="container-flex">
-          <img class="loguit" src="imagens/Loguit 1.svg" alt="Logo" />
-          <h1>Uma nova forma de aprender o saber</h1>
-          <button class="button-home">Nossos serviços</button>
+      <section class="container-flex-tamanho">
+        <div class="">
+          <img src="imagens/image 1.svg" alt="capa" />
         </div>
+        <!---- titulo--->
+        <container class="container-flex">
+          <img class="loguit" src="imagens/Loguit 1.svg" alt="Logo" />
+          <div class="container-flex-home">
+            <h1 class="sub-title">Uma nova forma de aprender o saber</h1>
+            <button class="button-home">Nossos serviços</button>
+          </div>
+        </container>
       </section>
+
       <!---- Sobre nós--->
-      <section id="sobrenos" class="container-flex body-azul">
+      <section
+        id="sobrenos"
+        class="container-flex body-azul container-flex-tamanho"
+      >
         <container class="container-separacao">
           <div class="img_flexbox img">
             <img src="imagens/fotoequipe.svg" alt="Foto da Equipe" />
@@ -54,34 +59,53 @@
               medida, de acordo com as necessidades e a realidade de cada
               instituição.
             </p>
+            <p class="text-normal">
+              Nossa missão é contribuir com pessoas, instituições e com Poder
+              Público em iniciativas de amplo impacto que garantam a melhoria da
+              qualidade da educação e a aprendizagem de todos estudantes.
+            </p>
+            <p class="text-normal">
+              Nossa visão é sobre um país justo, no qual todos têm oportunidades
+              de ampliar o seu potencial, provoca impactos no mundo.
+            </p>
           </div>
         </container>
       </section>
 
       <!---- Serviços--->
       <div class="body-azulclaro">
-        <h2>Serviços</h2>
-        <p1>
+        <h1 class="title-bigblue">Serviços</h1>
+        <p class="text-normal">
           Oferecemos serviços de formação continuada para gestores, professores
           e para equipes técnicas e equipes de apoio das escolas. Oferecemos
           assessoria pedagógica para as Secretarias de Educação, com ênfase na
           gestão administrativa e gestão pedagógica. Ofereceremos formação de
           curta duração como palestras, oficinas e workshop.
-        </p1>
+        </p>
       </div>
       <!---- Depoimento--->
       <div></div>
 
       <!---- Contato--->
-      <div class="body-azulclaro">
-        <h1>Entre em contato com a gente</h1>
-        <h2>
-          Entre em contato com a Arquitetura do Saber, queremos tirar suas
-          dúvidas, ouvir suas críticas e sugestões.
-        </h2>
-        <p>E-mail: thcomuca22@gmail.com</p>
-        <p>Fone: 69-9 8406-0760</p>
-      </div>
+      <section class="container-flex">
+        <container>
+          <h1 class="title-bigblue">Entre em contato com a gente</h1>
+          <h2 class="sub-title">
+            Entre em contato com a Arquitetura do Saber, queremos tirar suas
+            dúvidas, ouvir suas críticas e sugestões.
+          </h2>
+        </container>
+        <container>
+          <div>
+            <img src="" alt="Email-Icon" />
+            <p>E-mail: thcomuca22@gmail.com</p>
+          </div>
+          <div>
+            <img src="" alt="Telefone-Icon" />
+            <p>Fone: 69-9 8406-0760</p>
+          </div>
+        </container>
+      </section>
     </main>
     <footer>Footer</footer>
   </body>
