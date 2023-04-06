@@ -1,116 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
-body{
-    background: #E8F1F2;
-    height: 100vh;
-    box-sizing: border-box;
-  
-   
+body {
+  background: #e8f1f2;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-strong{
-    color: aqua;
+strong {
+  color: aqua;
 }
 
 .container-flex {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 05%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 05%;
+  width: 100%;
+  height: 800px;
 }
 
-
-
-.us__tamanho{
-    width: 707px;
-    height: 905px;
-}
-.loguit{
-    background: url(Loguit.jpg);
-    mix-blend-mode: multiply;
-    width: 400px;
-    height: 150px;
-
-}
- 
-
-.body-azul{
-    background: #C8ECF5;
-   
+loguit {
+  background: url(Loguit.jpg);
+  mix-blend-mode: multiply;
+  width: 400px;
+  height: 150px;
 }
 
-.button-home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    
-    width: 320px;
-    height: 68px;
-
-    
-    background: #29A0C1;
-    border-radius: 20px;
-    border-style: none;
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-}
-.container-titulo{
-    display: flex;
-    justify-content: space-between;
-    flex-direction:column;
-    align-items: center;
-    gap: 20px;
-
-}
-.container-separacao{
-    display: flex;
-    justify-content: space-between;
-    flex-direction:column;
-    align-items: center;
-    gap: 40px;
+.us-tamanho {
+  padding: 25px;
+  width: 60%;
+  height: 90%;
 }
 
-.title-bigblue{
-    color: #29A0C1;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 90px;
-    text-align: center;
-    letter-spacing: 0.1em;
+.img_flexbox::before {
+  content: "";
+  background-color: #29a0c1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -20px;
+  left: -10px;
+  z-index: -1;
 }
-.title-mediumblue{
-    font-family: 'Poppins',  sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    color: #29A0C1;
-
+.img_flexbox {
+  position: relative;
+  z-index: 1;
 }
-.text-normal{
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.1em;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 45px;
-    text-align: justify;
+.img_flexbox img {
+  width: 400px;
 }
 
+.body-azul {
+  background: #c8ecf5;
+}
+
+.button-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 220px;
+  height: 50px;
+
+  background: #29a0c1;
+  border-radius: 20px;
+  border-style: none;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.container-titulo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container-separacao {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.title-bigblue {
+  color: #29a0c1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.title-mediumblue {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #29a0c1;
+}
+.text-normal {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 30px;
+  text-align: justify;
+}
