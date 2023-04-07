@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="style/materialize-v1.0.0/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
     <title>Arquitetura do Saber</title>
   </head>
   <body>
@@ -82,15 +93,25 @@
           gestão administrativa e gestão pedagógica. Ofereceremos formação de
           curta duração como palestras, oficinas e workshop.
         </p>
+        <container class="row">
+          <div class="grid-example col s12">
+            <span class="flow-text">I am always full-width (col s12)</span>
+          </div>
+          <div class="grid-example col s12 m6">
+            <span class="flow-text"
+              >I am full-width on mobile (col s12 m6)
+            </span>
+          </div>
+        </container>
       </div>
       <!---- Depoimento--->
       <div></div>
 
       <!---- Contato--->
-      <section class="container-flex">
-        <container>
-          <h1 class="title-bigblue">Entre em contato com a gente</h1>
-          <h2 class="sub-title">
+      <section class="container-flex container-servicos">
+        <container class="">
+          <h1 class="title-black">Entre em contato com a gente!</h1>
+          <h2 class="subtitle-black">
             Entre em contato com a Arquitetura do Saber, queremos tirar suas
             dúvidas, ouvir suas críticas e sugestões.
           </h2>
@@ -108,5 +129,6 @@
       </section>
     </main>
     <footer>Footer</footer>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>

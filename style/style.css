@@ -136,6 +136,14 @@ header {
   align-items: center;
   gap: 40px;
 }
+.container-servicos {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 500px;
+}
 
 .title-bigblue {
   color: #29a0c1;
@@ -179,4 +187,19 @@ header {
   font-size: 1.5rem;
   line-height: 35px;
   text-align: justify;
+}
+
+.title-black {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+.subtitle-black {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 }
