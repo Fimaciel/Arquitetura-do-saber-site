@@ -53,7 +53,20 @@ header {
   padding: 0px;
   gap: 05%;
 }
-
+.container-equipe {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+}
+.div-equipe {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .loguit {
   background: url(Loguit.jpg);
   mix-blend-mode: multiply;
@@ -87,7 +100,14 @@ header {
 .img_flexbox img {
   width: 400px;
 }
+.img-equipe {
+  width: 250px;
+  height: 250px;
+  left: 0px;
+  top: 0px;
 
+  background: url(image);
+}
 .body-azul {
   background: #c8ecf5;
 }
