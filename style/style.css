@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
+@media all and (max-width: 1000px) {
+}
+
 body {
   background: #e8f1f2;
   height: 100vh;
@@ -17,20 +20,44 @@ footer {
 
   background: #29a0c1;
 }
-header {
+.nav {
   box-sizing: border-box;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px 33px;
-  gap: 167px;
+  gap: 50%;
+
+  position: absolute;
+  width: 100%;
+  height: 8%;
 
   background: #ffffff;
 
   border-bottom: 1px solid #29a0c1;
+}
+.nav-local {
+  display: flex;
+
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20%;
 
   flex: none;
-  order: 1;
+  order: 2;
+  flex-grow: 0;
+}
+.nav-img {
+  width: 100px;
+  height: 51px;
+
+  background: url(Capturar);
+  mix-blend-mode: multiply;
+
+  flex: none;
+  order: 0;
   flex-grow: 0;
 }
 .container-flex {
@@ -38,12 +65,12 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 10% 0%;
   gap: 05%;
 }
+
 .container-flex-tamanho {
   width: 100%;
-  height: 800px;
 }
 .container-flex-home {
   display: flex;
@@ -77,12 +104,6 @@ header {
   flex-grow: 0;
 }
 
-.us-tamanho {
-  padding: 25px;
-  width: 60%;
-  height: 90%;
-}
-
 .img_flexbox::before {
   content: "";
   background-color: #29a0c1;
@@ -110,6 +131,7 @@ header {
 }
 .body-azul {
   background: #c8ecf5;
+  width: 100%;
 }
 
 .button-home {
@@ -179,7 +201,29 @@ header {
   align-items: center;
   gap: 500px;
 }
+.placa {
+  display: flex;
+  background: #f9f9f9;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  width: 256px;
+  height: 260px;
+}
+.dentro-placa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
 
+  width: 256px;
+  height: 180px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 .title-bigblue {
   color: #29a0c1;
   font-family: "Poppins", sans-serif;
@@ -222,6 +266,7 @@ header {
   font-size: 1.5rem;
   line-height: 35px;
   text-align: justify;
+  padding: 5%;
 }
 
 .title-black {

@@ -10,37 +10,30 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="style/materialize-v1.0.0/materialize/css/materialize.min.css"
-      media="screen,projection"
-    />
 
     <title>Arquitetura do Saber</title>
   </head>
   <body>
-    <header >
-      <nav>
-        <a href="#home">Inicio</a>
-        <a href="#sobrenos">Sobre</a>
-        <a>Serviços</a>
-        <a>Depoimento</a>
-        <a>contato</a>
+    <header>
+      <nav class="nav">
+        <img src="imagens/Logo-menu.svg" alt="Logo" class="nav-img" />
+        <div class="nav-local">
+          <a href="#home">Inicio</a>
+          <a href="#sobrenos">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">contato</a>
+        </div>
       </nav>
     </header>
     <main>
       <!---- capa home --->
-      <section class="container-flex-tamanho">
-        <div class="">
-          <img src="imagens/image 1.svg" alt="capa" />
-        </div>
+      <section>
         <!---- titulo--->
         <container class="container-flex">
-          <img class="loguit" src="imagens/Loguit 1.svg" alt="Logo" />
+          <img class="loguit" src="imagens/loguit.svg" alt="Logo" />
           <div class="container-flex-home">
             <h1 class="sub-title">Uma nova forma de aprender o saber</h1>
-            <button class="button-home">Nossos serviços</button>
+            <a class="button-home" href="#servicos">Nossos Serviços</a>
           </div>
         </container>
       </section>
@@ -48,42 +41,39 @@
       <!---- Sobre nós--->
       <section
         id="sobrenos"
-        class="container-flex body-azul container-flex-tamanho"
+        class="container-flex container-flex-tamanho body-azul"
       >
         <container class="container-separacao">
           <div class="img_flexbox img">
             <img src="imagens/fotoequipe.svg" alt="Foto da Equipe" />
           </div>
-          <div class="container-titulo">
-            <h2 class="title-mediumblue">Conheça a Equipe</h2>
-            <a class="button-home"  href="equipe.html">Nossa Equipe</a>
-          </div>
+          <div class="container-titulo"></div>
         </container>
-        <container class="us-tamanho container-flex">
-          <div>
+        <container>
+          <div class="text-normal">
             <h1 class="title-bigblue">Sobre nós</h1>
-            <p class="text-normal">
+            <p>
               A Arquitetura do Saber é uma organização comprometida com a
               educação integral e de qualidade.
             </p>
-            <p class="text-normal">
+            <p>
               Movidos pelo sonho de impulsionar o potencial de todos os
               estudantes, buscamos ofertar formação continuada para gestores
               públicos, gestores escolares, educadores e demais profissionais da
               educação.
             </p>
-            <p class="text-normal">
+            <p>
               Os desafios são próprios em cada município, em cada escola. Para
               atender as especificidades, criamos programas de formação sob
               medida, de acordo com as necessidades e a realidade de cada
               instituição.
             </p>
-            <p class="text-normal">
+            <p>
               Nossa missão é contribuir com pessoas, instituições e com Poder
               Público em iniciativas de amplo impacto que garantam a melhoria da
               qualidade da educação e a aprendizagem de todos estudantes.
             </p>
-            <p class="text-normal">
+            <p>
               Nossa visão é sobre um país justo, no qual todos têm oportunidades
               de ampliar o seu potencial, provoca impactos no mundo.
             </p>
@@ -92,7 +82,7 @@
       </section>
 
       <!---- Serviços--->
-      <div class="body-azulclaro">
+      <section id="servicos">
         <h1 class="title-bigblue">Serviços</h1>
         <p class="text-normal">
           Oferecemos serviços de formação continuada para gestores, professores
@@ -101,28 +91,32 @@
           gestão administrativa e gestão pedagógica. Ofereceremos formação de
           curta duração como palestras, oficinas e workshop.
         </p>
-        <container class="row">
-          <div class="grid-example col s12">
-            <span class="flow-text">I am always full-width (col s12)</span>
-          </div>
-          <div class="grid-example col s12 m6">
-            <span class="flow-text"
-              >I am full-width on mobile (col s12 m6)
-            </span>
+      </section>
+      <section class="container-flex">
+        <container class="placa">
+          <div class="dentro-placa">
+            <h3>Palestras</h3>
+            <p>texto exemplo</p>
           </div>
         </container>
-      </div>
+        <container class="placa">
+          <div class="dentro-placa">
+            <h3>Formação</h3>
+            <p>texto exemplo</p>
+          </div>
+        </container>
+      </section>
       <!---- Depoimento--->
       <div></div>
 
       <!---- Contato--->
-      <section class="container-flex container-servicos">
+      <section id="contato" class="container-flex container-servicos">
         <container class="">
-          <h2 class="title-midblack">Entre em contato com a gente!</h1>
+          <h1 class="title-midblack">Entre em contato com a gente!</h1>
           <h3 class="subtitle-black">
             Entre em contato com a Arquitetura do Saber, queremos tirar suas
             dúvidas, ouvir suas críticas e sugestões.
-          </h2>
+          </h3>
         </container>
         <container>
           <div class="icon-row">
@@ -137,6 +131,5 @@
       </section>
     </main>
     <footer>Footer</footer>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
