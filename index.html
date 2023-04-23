@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -15,24 +18,55 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="#home"
-          ><img src="imagens/Logo-menu.svg" alt="Logo" class="nav-img"
-        /></a>
-        <div class="nav-local">
-          <a href="#home" class="menu-font">Inicio</a>
-          <a href="#sobrenos" class="menu-font">Sobre</a>
-          <a href="#servicos" class="menu-font">Serviços</a>
-          <a href="#contato" class="menu-font">contato</a>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="assets/imagens/Logo-menu.svg" />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobrenos" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicos" class="nav-link"> Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contato" class="nav-link"> Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/imagens/icons/Icon.svg" />
+          </button>
         </div>
       </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item">
+            <a href="#sobrenos" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link"> Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link"> Contato</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!---- capa home --->
       <section id="home">
         <!---- titulo--->
-        <container class="container-flex">
-          <img class="loguit" src="imagens/loguit.svg" alt="Logo" />
+        <container class="container-flex container-flex-tamanho">
+          <img class="loguit" src="assets/imagens/loguit.svg" alt="Logo" />
           <div class="container-flex-home">
             <h1 class="sub-title">
               UMA NOVA FORMA DE<br />
@@ -50,7 +84,7 @@
       >
         <container class="container-separacao">
           <div class="img_flexbox img">
-            <img src="imagens/fotoequipe.svg" alt="Foto da Equipe" />
+            <img src="assets/imagens/fotoequipe.svg" alt="Foto da Equipe" />
           </div>
           <div class="container-titulo"></div>
         </container>
@@ -129,13 +163,13 @@
             dúvidas, ouvir suas críticas e sugestões.
           </h3>
         </div>
-        <container>
+        <container class="contato-icons">
           <div class="icon-row">
-            <img src="imagens/icons/mail.svg" alt="Email-Icon" />
+            <img src="assets/imagens/icons/mail.svg" alt="Email-Icon" />
             <p class="text-azul">thcomuca22@gmail.com</p>
           </div>
           <div class="icon-row">
-            <img src="imagens/icons/whatsapp.svg" alt="Telefone-Icon" />
+            <img src="assets/imagens/icons/whatsapp.svg" alt="Telefone-Icon" />
             <p class="text-azul">69-9 8406-0760</p>
           </div>
         </container>
@@ -148,9 +182,11 @@
         <p class="footer-text">Todos os direitos reservados.</p>
       </div>
       <div class="footer">
-        <img src="imagens/icons/mail-branco.svg" alt="Email" />
-        <img src="imagens/icons/whatsapp-branco.svg" alt="Telefone" />
+        <img src="assets/imagens/icons/mail-branco.svg" alt="Email" />
+        <img src="assets/imagens/icons/whatsapp-branco.svg" alt="Telefone" />
       </div>
+
+      <script src="assets/js/script.js"></script>
     </footer>
   </body>
 </html>
