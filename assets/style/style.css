@@ -469,6 +469,9 @@
     align-items: center;
     gap: 10px;
   }
+  .copa {
+    width: 100%;
+  }
   .loguit {
     background: url(Loguit.jpg);
     mix-blend-mode: multiply;
