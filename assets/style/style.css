@@ -11,6 +11,9 @@
 
 @media screen and (max-width: 715px) {
   header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     background-color: var(--cor-terciaria);
     border-bottom: 1px solid var(--cor-primaria);
   }
@@ -83,7 +86,9 @@
     display: block;
   }
   .capa {
+    position: block;
     width: 100%;
+    margin: 15% 0%;
   }
   .container-flex {
     display: flex;
@@ -328,6 +333,13 @@
     font-weight: 600;
     font-size: 2rem;
   }
+  .title-midblue {
+    color: var(--cor-primaria);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+  }
   .texto-menor {
     color: var(--cor-quatro);
     font-family: "Poppins", sans-serif;
@@ -384,6 +396,9 @@
     background: var(--cor-primaria);
   }
   header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     background-color: var(--cor-terciaria);
     border-bottom: 1px solid var(--cor-primaria);
   }
@@ -703,6 +718,13 @@
     line-height: 54px;
   }
   .title-midblack {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .title-midblue {
+    color: var(--cor-primaria);
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;

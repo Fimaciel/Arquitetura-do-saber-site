@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/imagens/icons/icon-web.svg" />
+
+    <title>Arquitetura do Saber</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img class="logo-menu" src="assets/imagens/loguit-menu.svg" />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobrenos" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicos" class="nav-link"> Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contato" class="nav-link"> Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/imagens/icons/Icon.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item">
+            <a href="#sobrenos" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link"> Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link"> Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!---- capa home --->
+      <section id="home">
+        <img class="capa" src="assets/imagens/capa1.svg" alt="Capa" />
+        <!---- titulo--->
+        <container class="container-flex container-flex-tamanho">
+          <img class="loguit" src="assets/imagens/loguit.svg" alt="Logo" />
+          <div class="container-flex-home">
+            <h1 class="sub-title">
+              UMA NOVA FORMA DE<br />
+              APRENDER<br />
+            </h1>
+            <a class="button-home" href="#servicos">Nossos Serviços</a>
+          </div>
+        </container>
+      </section>
+
+      <!---- Sobre nós--->
+      <section
+        id="sobrenos"
+        class="container-flex container-flex-tamanho body-azul"
+      >
+        <container class="container-separacao">
+          <div class="img_flexbox img">
+            <img src="assets/imagens/fotoequipe.svg" alt="Foto da Equipe" />
+          </div>
+          <div class="container-titulo"></div>
+        </container>
+        <container>
+          <div class="text-normal">
+            <h1 class="title-bigblue">Sobre nós</h1>
+            <p>
+              A Arquitetura do Saber é uma organização comprometida com a
+              educação integral e de qualidade.
+            </p>
+            <p>
+              Movidos pelo sonho de impulsionar o potencial de todos os
+              estudantes, buscamos ofertar formação continuada para gestores
+              públicos, gestores escolares, educadores e demais profissionais da
+              educação.
+            </p>
+            <p>
+              Os desafios são próprios em cada município, em cada escola. Para
+              atender as especificidades, criamos programas de formação sob
+              medida, de acordo com as necessidades e a realidade de cada
+              instituição.
+            </p>
+            <p>
+              Nossa missão é contribuir com pessoas, instituições e com Poder
+              Público em iniciativas de amplo impacto que garantam a melhoria da
+              qualidade da educação e a aprendizagem de todos estudantes.
+            </p>
+            <p>
+              Nossa visão é sobre um país justo, no qual todos têm oportunidades
+              de ampliar o seu potencial, provoca impactos no mundo.
+            </p>
+          </div>
+        </container>
+      </section>
+
+      <!---- Serviços--->
+      <section id="servicos" class="container-servicos">
+        <container>
+          <h1 class="title-bigblue">Serviços</h1>
+          <p class="text-contato">
+            Oferecemos serviços de formação continuada para gestores,<br />
+            professores e para equipes técnicas e equipes de apoio das escolas.
+          </p>
+        </container>
+        <section class="container-flex">
+          <container class="placa">
+            <div class="dentro-placa">
+              <h3 class="title-lilblack">ACESSORIAS</h3>
+              <p class="texto-menor">
+                Oferecemos assessoria pedagógica para as Secretarias de
+                Educação, com ênfase na gestão administrativa e gestão
+                pedagógica.
+              </p>
+            </div>
+          </container>
+          <container class="placa">
+            <div class="dentro-placa">
+              <h3 class="title-lilblack">FORMAÇÃO</h3>
+              <p class="texto-menor">
+                Ofereceremos formação de curta duração como palestras, oficinas
+                e workshop.
+              </p>
+            </div>
+          </container>
+        </section>
+      </section>
+      <!---- Depoimento--->
+      <div></div>
+
+      <!---- Contato--->
+      <section id="contato" class="body-azul container-contato">
+        <div class="div-contato">
+          <h1 class="title-midblack">Entre em contato com a gente!</h1>
+          <h3 class="subtitle-black">
+            Entre em contato com a Arquitetura do Saber, queremos tirar suas
+            dúvidas, ouvir suas críticas e sugestões.
+          </h3>
+        </div>
+        <container class="contato-icons">
+          <div class="icon-row">
+            <img src="assets/imagens/icons/mail.svg" alt="Email-Icon" />
+            <p class="text-azul">thcomuca22@gmail.com</p>
+          </div>
+          <div class="icon-row">
+            <img src="assets/imagens/icons/whatsapp.svg" alt="Telefone-Icon" />
+            <p class="text-azul">69-9 8406-0760</p>
+          </div>
+        </container>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <h1 class="footer-titulo">Arquitetura do Saber</h1>
+        <p class="footer-text">©2023 thcomunicações.</p>
+        <p class="footer-text">Todos os direitos reservados.</p>
+      </div>
+      <div class="footer">
+        <img src="assets/imagens/icons/mail-branco.svg" alt="Email" />
+        <img src="assets/imagens/icons/whatsapp-branco.svg" alt="Telefone" />
+      </div>
+
+      <script src="assets/js/script.js"></script>
+    </footer>
+  </body>
+</html>
