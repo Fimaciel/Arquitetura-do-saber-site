@@ -44,7 +44,30 @@
     justify-content: center;
     list-style: none;
   }
+  .button-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 
+    width: 50%;
+
+    background: var(--cor-primaria);
+    border-radius: 20px;
+    border-style: none;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+  }
   .nav-item {
     display: none;
   }
@@ -431,6 +454,30 @@
     font-size: 1.15rem;
     color: var(--cor-primaria);
     font-weight: 400;
+  }
+  .button-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 100%;
+
+    background: var(--cor-primaria);
+    border-radius: 20px;
+    border-style: none;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
   }
 
   .login-button button {
