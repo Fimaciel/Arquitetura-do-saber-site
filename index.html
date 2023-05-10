@@ -7,6 +7,11 @@
       name="viewport"
       content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="assets/style/reset.css" />
     <link rel="stylesheet" href="assets/style/style.css" />
     <link
@@ -65,7 +70,27 @@
     <main>
       <!---- capa home --->
       <section>
-        <img class="capa" src="assets/imagens/capa1.svg" alt="Capa" />
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="assets/imagens/capa1.svg" />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
         <!---- titulo--->
         <container id="home" class="container-flex container-flex-tamanho">
           <img class="loguit" src="assets/imagens/loguit.svg" alt="Logo" />
@@ -78,7 +103,6 @@
           </div>
         </container>
       </section>
-
       <!---- Sobre nós--->
       <section
         id="sobrenos"
@@ -189,6 +213,8 @@
       </div>
 
       <script src="assets/js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="assets/js/swiper.js"></script>
     </footer>
   </body>
 </html>
