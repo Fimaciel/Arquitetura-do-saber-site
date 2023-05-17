@@ -340,6 +340,119 @@
     gap: 20px;
   }
 
+  .logi-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 10%;
+    gap: 10px;
+    background: var(--body-color);
+
+    position: absolute;
+    width: 50%;
+    left: 14%;
+    top: 14%;
+    bottom: 14%;
+  }
+  .input-login {
+    border-style: none;
+    width: 90%;
+    height: 40px;
+
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+  .login-entrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 70%;
+
+    background: var(--cor-primaria);
+    border-radius: 20px;
+    border-style: none;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-entrar:hover {
+    background: var(--cor-terciaria);
+    border-radius: 20px;
+    border-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-cancelar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 70%;
+
+    background: red;
+    border-radius: 20px;
+    border-style: none;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .login-cancelar:hover {
+    background: var(--cor-terciaria);
+    border-radius: 20px;
+    border-color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: red;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .text-normal-login {
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.1px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: justify;
+  }
+
   .title-bigblue {
     color: var(--cor-primaria);
     font-family: "Poppins", sans-serif;
@@ -854,6 +967,108 @@
     font-size: 1.5rem;
     color: var(--cor-primaria);
   }
+  .logi-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 10%;
+    gap: 10px;
+    background: var(--body-color);
+
+    position: absolute;
+    width: 50%;
+    left: 14%;
+    top: 14%;
+    bottom: 14%;
+  }
+  .input-login {
+    border-style: none;
+    width: 400px;
+    height: 45px;
+
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+  .login-entrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 70%;
+
+    background: var(--cor-primaria);
+    border-radius: 20px;
+    border-style: none;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-entrar:hover {
+    background: var(--cor-terciaria);
+    border-radius: 20px;
+    border-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-cancelar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 70%;
+
+    background: red;
+    border-radius: 20px;
+    border-style: none;
+
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-cancelar:hover {
+    background: var(--cor-terciaria);
+    border-radius: 20px;
+    border-color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: red;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .login-div {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
   .title-bigblue {
     color: var(--cor-primaria);
     font-family: "Poppins", sans-serif;
@@ -904,7 +1119,16 @@
     text-align: justify;
     padding: 5%;
   }
-
+  .text-normal-login {
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.1px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: justify;
+  }
   .text-contato {
     color: #000000;
     font-family: "DM Sans", sans-serif;
