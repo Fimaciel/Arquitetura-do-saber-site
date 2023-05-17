@@ -1,0 +1,50 @@
+{% load static %}
+<header>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img class="logo" src="{% static 'assets/imagens/logo-menu2.svg' %}" />
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sobrenos" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="#servicos" class="nav-link"> Serviços</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contato" class="nav-link"> Contato</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu-icon">
+      <button onclick="menuShow()">
+        {% block extra_js %}
+        <script type="text/javascript">
+          var STATIC_URL = "{% static 'assets/' %}";
+        </script>
+        {% endblock %}
+        <img class="icon" src="{% static 'assets/imagens/icons/Icon.svg' %}" />
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <ul>
+      <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+      <li class="nav-item">
+        <a href="#sobrenos" class="nav-link">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a href="#servicos" class="nav-link"> Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contato" class="nav-link"> Contato</a>
+      </li>
+    </ul>
+  </div>
+</header>

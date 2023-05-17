@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="{% static 'assets/style/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
+    <link
+      href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}"
+      rel="stylesheet"
+    />
+
+    <title>Arquitetura do Saber</title>
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+    <script src="{% static 'assets/js/script.js' %}"></script>
+  </body>
+</html>

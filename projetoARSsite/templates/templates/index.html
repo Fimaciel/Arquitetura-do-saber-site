@@ -1,0 +1,128 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!--- Menu -->
+{% include 'partials/menu.html'%}
+<main>
+  <!---- capa home --->
+  <section id="home">
+    <!---- titulo--->
+    <container class="container-flex container-flex-tamanho">
+      <img
+        class="loguit"
+        src="{% static 'assets/imagens/loguit.svg' %}"
+        alt="Logo"
+      />
+      <div class="container-flex-home">
+        <h1 class="sub-title">
+          UMA NOVA FORMA DE<br />
+          APRENDER O SABER<br />
+        </h1>
+        <a class="button-home" href="#servicos">Nossos Serviços</a>
+      </div>
+    </container>
+  </section>
+
+  <!---- Sobre nós--->
+  <section
+    id="sobrenos"
+    class="container-flex container-flex-tamanho body-azul"
+  >
+    <container class="container-separacao">
+      <div class="img_flexbox img">
+        <img
+          src="{% static 'assets/imagens/fotoequipe.svg' %}"
+          alt="Foto da Equipe"
+        />
+      </div>
+      <div class="container-titulo"></div>
+    </container>
+    <container>
+      <div class="text-normal">
+        <h1 class="title-bigblue">Sobre nós</h1>
+        <p>
+          A Arquitetura do Saber é uma organização comprometida com a educação
+          integral e de qualidade.
+        </p>
+        <p>
+          Movidos pelo sonho de impulsionar o potencial de todos os estudantes,
+          buscamos ofertar formação continuada para gestores públicos, gestores
+          escolares, educadores e demais profissionais da educação.
+        </p>
+        <p>
+          Os desafios são próprios em cada município, em cada escola. Para
+          atender as especificidades, criamos programas de formação sob medida,
+          de acordo com as necessidades e a realidade de cada instituição.
+        </p>
+        <p>
+          Nossa missão é contribuir com pessoas, instituições e com Poder
+          Público em iniciativas de amplo impacto que garantam a melhoria da
+          qualidade da educação e a aprendizagem de todos estudantes.
+        </p>
+        <p>
+          Nossa visão é sobre um país justo, no qual todos têm oportunidades de
+          ampliar o seu potencial, provoca impactos no mundo.
+        </p>
+      </div>
+    </container>
+  </section>
+
+  <!---- Serviços--->
+  <section id="servicos" class="container-servicos">
+    <container>
+      <h1 class="title-bigblue">Serviços</h1>
+      <p class="text-contato">
+        Oferecemos serviços de formação continuada para gestores,<br />
+        professores e para equipes técnicas e equipes de apoio das escolas.
+      </p>
+    </container>
+    <section class="container-flex">
+      <container class="placa">
+        <div class="dentro-placa">
+          <h3 class="title-lilblack">ACESSORIAS</h3>
+          <p class="texto-menor">
+            Oferecemos assessoria pedagógica para as Secretarias de Educação,
+            com ênfase na gestão administrativa e gestão pedagógica.
+          </p>
+        </div>
+      </container>
+      <container class="placa">
+        <div class="dentro-placa">
+          <h3 class="title-lilblack">FORMAÇÃO</h3>
+          <p class="texto-menor">
+            Ofereceremos formação de curta duração como palestras, oficinas e
+            workshop.
+          </p>
+        </div>
+      </container>
+    </section>
+  </section>
+  <!---- Depoimento--->
+  <div></div>
+
+  <!---- Contato--->
+  <section id="contato" class="body-azul container-contato">
+    <div class="div-contato">
+      <h1 class="title-midblack">Entre em contato com a gente!</h1>
+      <h3 class="subtitle-black">
+        Entre em contato com a Arquitetura do Saber, queremos tirar suas
+        dúvidas, ouvir suas críticas e sugestões.
+      </h3>
+    </div>
+    <container class="contato-icons">
+      <div class="icon-row">
+        <img
+          src="{% static 'assets/imagens/icons/mail.svg' %}"
+          alt="Email-Icon"
+        />
+        <p class="text-azul">thcomuca22@gmail.com</p>
+      </div>
+      <div class="icon-row">
+        <img
+          src="{% static 'assets/imagens/icons/whatsapp.svg' %}"
+          alt="Telefone-Icon"
+        />
+        <p class="text-azul">69-9 8406-0760</p>
+      </div>
+    </container>
+  </section>
+</main>
+{% include 'partials/footer.html'%} {% endblock %}

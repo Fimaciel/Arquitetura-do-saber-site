@@ -11,7 +11,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/style/reset.css" />
     <link rel="stylesheet" href="assets/style/style.css" />
     <link
@@ -26,7 +29,9 @@
     <header>
       <nav class="nav-bar">
         <div class="logo">
-          <img class="logo-menu" src="assets/imagens/loguit-menu.svg" />
+          <a href="#home"
+            ><img class="logo-menu" src="assets/imagens/loguit-menu.svg"
+          /></a>
         </div>
         <div class="nav-list">
           <ul>
@@ -69,14 +74,18 @@
     </header>
     <main>
       <!---- capa home --->
-      <section>
+      <section id="home">
         <!-- Slider main container -->
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="assets/imagens/capa1.svg" />
+              <img
+                src="assets/imagens/capa1.svg"
+                alt="Imagem"
+                class="swiper-slide-image"
+              />
             </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
@@ -92,7 +101,7 @@
         </div>
 
         <!---- titulo--->
-        <container id="home" class="container-flex container-flex-tamanho">
+        <container class="container-flex container-flex-tamanho">
           <img class="loguit" src="assets/imagens/loguit.svg" alt="Logo" />
           <div class="container-flex-home">
             <h1 class="sub-title">
@@ -155,33 +164,72 @@
             professores e para equipes técnicas e equipes de apoio das escolas.
           </p>
         </container>
-        <section class="container-flex">
+        <section class="container-servicos-flex">
           <container class="placa">
-            <div class="dentro-placa">
+            <div class="dentro-placa1">
               <h3 class="title-lilblack">ACESSORIAS</h3>
               <p class="texto-menor">
                 Oferecemos assessoria pedagógica para as Secretarias de
                 Educação, com ênfase na gestão administrativa e gestão
                 pedagógica.
               </p>
+              <a class="button-placa" href="acessoriaCliente.html"
+                >Saiba mais</a
+              >
             </div>
           </container>
           <container class="placa">
-            <div class="dentro-placa">
+            <div class="dentro-placa2">
               <h3 class="title-lilblack">FORMAÇÃO</h3>
               <p class="texto-menor">
                 Ofereceremos formação de curta duração como palestras, oficinas
                 e workshop.
               </p>
+              <a class="button-placa" href="formacaoCliente.html">Saiba mais</a>
             </div>
           </container>
         </section>
       </section>
       <!---- Depoimento--->
-      <div></div>
+      <section class="body-azul">
+        <h1 class="title-lilblack">Depoimentos de quem já passou por aqui</h1>
+        <div class="container-flex">
+          <container class="depoimento-placa">
+            <div class="dentro-placa"></div>
+          </container>
+          <container class="depoimento-placa">
+            <div class="dentro-placa">
+              <p>
+                <strong>"</strong> Minha Escola melhorou muito o rendimento
+                desde as palestras realizadas pela a arquitetura do saber!
+              </p>
 
+              <h3>Nome sobrenome</h3>
+              <div class="estrelas">
+                <input
+                  type="radio"
+                  id="cm_star-empty"
+                  name="fb"
+                  value=""
+                  checked
+                />
+                <label for="cm_star-1"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-1" name="fb" value="1" />
+                <label for="cm_star-2"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-2" name="fb" value="2" />
+                <label for="cm_star-3"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-3" name="fb" value="3" />
+                <label for="cm_star-4"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-4" name="fb" value="4" />
+                <label for="cm_star-5"><i class="fa"></i></label>
+                <input type="radio" id="cm_star-5" name="fb" value="5" />
+              </div>
+            </div>
+          </container>
+        </div>
+      </section>
       <!---- Contato--->
-      <section id="contato" class="body-azul container-contato">
+      <section id="contato" class="container-contato">
         <div class="div-contato">
           <h1 class="title-midblack">Entre em contato com a gente!</h1>
           <h3 class="subtitle-black">
@@ -206,6 +254,7 @@
         <h1 class="footer-titulo">Arquitetura do Saber</h1>
         <p class="footer-text">©2023 thcomunicações.</p>
         <p class="footer-text">Todos os direitos reservados.</p>
+        <a href="login.html" class="login"> login</a>
       </div>
       <div class="footer">
         <img src="assets/imagens/icons/mail-branco.svg" alt="Email" />
