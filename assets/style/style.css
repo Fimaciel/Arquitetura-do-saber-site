@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@400;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@600&family=Poppins:wght@400;600;700;800&display=swap");
 :root {
   --body-color: #e8f1f2;
   --cor-primaria: #29a0c1;
@@ -26,6 +25,14 @@
     width: auto;
     background: var(--cor-primaria);
     padding: 5%;
+  }
+  strong {
+    color: var(--cor-primaria);
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 26px;
   }
   .nav-bar {
     display: flex;
@@ -126,7 +133,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 05%;
+    gap: 25px;
     width: auto;
   }
   .container-flex-tamanho {
@@ -262,6 +269,30 @@
     gap: 50px;
     width: auto;
   }
+  .depoimento-placa {
+    width: 30%;
+    padding: 5%;
+    background: #e8f1f2;
+    /* Dropshadow */
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+  }
+  .depoimentos {
+    padding-bottom: 10%;
+  }
+
+  .placas-depoimento {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .dentro-placa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25%;
+  }
 
   .container-servicos-flex {
     display: flex;
@@ -290,8 +321,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 20px;
   }
+
   .button-placa {
     display: flex;
     flex-direction: row;
@@ -478,6 +511,7 @@
     font-size: 1.4rem;
     line-height: 36px;
     text-align: center;
+    padding: 5%;
   }
   .sub-title {
     font-family: "Poppins";
@@ -554,6 +588,22 @@
     font-size: 1.2rem;
     line-height: 25px;
   }
+  .depoimento-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+  .depoimento-nome {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+
+    color: #767676;
+  }
   .footer-text {
     font-family: "Arial";
     font-style: normal;
@@ -591,6 +641,13 @@
     z-index: 2;
     background-color: var(--cor-terciaria);
     border-bottom: 1px solid var(--cor-primaria);
+  }
+  strong {
+    color: var(--cor-primaria);
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
   }
   .nav-bar {
     display: flex;
@@ -860,6 +917,7 @@
     order: 0;
     flex-grow: 0;
   }
+
   .button-placa {
     display: flex;
     flex-direction: row;
@@ -893,31 +951,29 @@
     font-weight: 800;
     font-size: 1.5rem;
   }
-  .depoimento-placa {
-    width: 544px;
-    height: 264px;
-    left: 699px;
-    top: 332px;
 
+  .depoimento-placa {
+    width: 30%;
+    padding: 5%;
     background: #e8f1f2;
     /* Dropshadow */
 
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
   }
-  .estrelas input[type="radio"] {
-    display: none;
+
+  .placas-depoimento {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
-  .estrelas label i.fa {
-    font-size: 2.5em;
+  .dentro-placa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25%;
   }
-  .estrelas label i.fa:before {
-    content: "\f005";
-    color: #fc0;
-  }
-  .estrelas input[type="radio"]:checked ~ label i.fa:before {
-    color: #ccc;
-  }
+
   .txtbox-comentario {
     align-items: top;
     width: 500px;
@@ -1185,6 +1241,22 @@
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 25px;
+  }
+  .depoimento-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+  .depoimento-nome {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 28px;
+
+    color: #767676;
   }
   .footer-text {
     font-family: "Arial";
