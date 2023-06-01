@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@600&family=Poppins:wght@400;600;700;800&display=swap");
-@import url("formacao.css");
+@import url("servicos.css");
+@import url("publicar.css");
 :root {
   --body-color: #e8f1f2;
   --cor-primaria: #29a0c1;
@@ -271,7 +272,7 @@
     width: auto;
   }
   .depoimento-placa {
-    width: 30%;
+    width: 60%;
     padding: 5%;
     background: #e8f1f2;
     /* Dropshadow */

@@ -21,22 +21,27 @@
     <header>
       <nav class="nav-bar">
         <div class="logo">
-          <img class="logo-menu" src="assets/imagens/loguit-menu.svg" />
+          <a href="homeUsuario.html#home"
+            ><img class="logo-menu" src="assets/imagens/loguit-menu.svg"
+          /></a>
         </div>
         <div class="nav-list">
           <ul>
             <li class="nav-item">
-              <a href="#home" class="nav-link">Início</a>
+              <a href="homeUsuario.html#home" class="nav-link">Início</a>
             </li>
             <li class="nav-item">
-              <a href="#sobrenos" class="nav-link">Sobre</a>
+              <a href="homeUsuario.html#sobrenos" class="nav-link">Sobre</a>
             </li>
             <li class="nav-item">
-              <a href="#servicos" class="nav-link"> Serviços</a>
+              <a href="homeUsuario.html#servicos" class="nav-link"> Serviços</a>
             </li>
 
             <li class="nav-item">
-              <a href="#contato" class="nav-link"> Contato</a>
+              <a href="homeUsuario.html#contato" class="nav-link"> Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="publicar.html" class="button-menu"> Publicar </a>
             </li>
           </ul>
         </div>
@@ -50,16 +55,19 @@
       <div class="mobile-menu">
         <ul>
           <li class="nav-item">
-            <a href="index.html/#home" class="nav-link">Início</a>
+            <a href="homeUsuario.html#home" class="nav-link">Início</a>
           </li>
           <li class="nav-item">
-            <a href="index.html/#sobre" class="nav-link">Sobre</a>
+            <a href="homeUsuario.html#sobrenos" class="nav-link">Sobre</a>
           </li>
           <li class="nav-item">
-            <a href="#servicos" class="nav-link"> Serviços</a>
+            <a href="homeUsuario.html#servicos" class="nav-link"> Serviços</a>
           </li>
           <li class="nav-item">
-            <a href="index.html/#contato" c lass="nav-link"> Contato</a>
+            <a href="homeUsuario.html#contato" class="nav-link"> Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="publicar.html" class="button-menu">Publicar</a>
           </li>
         </ul>
       </div>
@@ -67,7 +75,7 @@
     <main>
       <section>
         <img
-          class="capa"
+          class="capa-for"
           src="assets/imagens/capa2.png"
           alt="Um exemplo de palestra"
         />
@@ -75,12 +83,52 @@
       <!-- textos da pagina -->
       <section class="container-flex">
         <div class="container-flex-home">
-          <h1 class="title-midblue">Como são as Acessorias</h1>
+          <h1 class="title-for">Como são as Acessorias</h1>
           <p class="texto-menor">Acessorias são coisas legais muito legais</p>
         </div>
         <div class="container-flex-home">
-          <h1 class="title-midblue">Beneficios</h1>
+          <h1 class="title-for">Beneficios</h1>
           <p class="texto-menor">Acessorias são coisas legais muito legais</p>
+        </div>
+      </section>
+      <!--- Publicações-->
+      <section id="Postagens" class="Postagens">
+        <form class="form">
+          <input class="input" type="text" placeholder="Pesquisar" />
+          <button class="button" type="submit">
+            <img src="assets/imagens/icons/search.svg" alt="" />
+          </button>
+        </form>
+        <div class="div-card">
+          <a class="link-post" href="postpalestraCliente.html">
+            <div class="formacao-card">
+              <img
+                class="img-car"
+                src="assets/imagens/children-g206872d98_1280.svg"
+                alt="Capa do trabalho em Cacoal"
+              />
+              <h1 class="titulo-card">Trabalho em Cacoal</h1>
+              <div class="login-div">
+                <p class="texto-card">Publicado: Helen</p>
+                <p class="texto-card">Data: 20/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a class="link-post" href=" "
+            ><div class="formacao-card">class</div></a
+          >
+          <a class="link-post" href=" "
+            ><div class="formacao-card">class</div></a
+          >
+        </div>
+        <div class="pagination">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
         </div>
       </section>
     </main>

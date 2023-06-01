@@ -14,18 +14,25 @@
 }
 
 .input[type="text"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  left: 77.75%;
+  right: 1.02%;
+  top: 2.73%;
+  bottom: 87.5%;
+  height: 25px;
+
+  border: none;
+  background: #e8f1f2;
+  border-radius: 20px;
 }
 
 .button[type="submit"] {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  position: absolute;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
+  /* z-index: 2; */
+  right: 14px;
+  background: transparent;
 }
 .link-post {
   text-decoration: none;
@@ -71,6 +78,8 @@
   height: 200px;
   left: 35px;
   top: 64.5px;
+  border-bottom: 5px solid var(--cor-primaria);
+  border-radius: 10px;
 
   background: var(--body-color);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
@@ -106,7 +115,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20%;
+  gap: 15%;
   width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -140,4 +149,72 @@
 
 .pagination li a:hover {
   background-color: #f1f1f1;
+}
+.title-for {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 54px;
+  text-align: center;
+  color: var(--cor-primaria);
+}
+@media screen and (max-width: 715px) {
+  .container-for {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+  }
+  .Postagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    gap: 10%;
+
+    background-color: var(--cor-segundaria);
+  }
+  .button[type="submit"] {
+    position: absolute;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    /* z-index: 2; */
+    right: 115px;
+    background: transparent;
+  }
+
+  .div-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5%;
+  }
+
+  .formacao-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+
+    width: 250px;
+    height: 200px;
+    left: 35px;
+    top: 64.5px;
+    border-bottom: 5px solid var(--cor-primaria);
+    border-radius: 10px;
+
+    background: var(--body-color);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  }
 }
