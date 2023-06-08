@@ -635,6 +635,10 @@
 
     color: var(--cor-terciaria);
   }
+  .publicador {
+    text-align: right;
+    padding: 5px;
+  }
 }
 @media screen and (min-width: 716px) {
   body {
@@ -1165,6 +1169,10 @@
     padding: 5%;
 
     text-align: center;
+  }
+  .publicador {
+    text-align: right;
+    padding: 5px;
   }
   .sub-title {
     font-family: "Poppins";
