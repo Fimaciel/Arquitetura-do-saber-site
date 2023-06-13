@@ -78,27 +78,59 @@
       </div>
     </header>
     <main>
-      <div class="content">
-        <label for="">Serviço: </label>
-        <input class="textbox-pub" type="text" />
-        <label for="">Titulo: </label>
-        <input class="textbox-pub" type="text" />
+      <div class="content-top">
+        <form class="div-text-pub" method="post" action="">
+          <label>Tipo de Serviço:</label>
+          <container class="select">
+            <select name="servicos">
+              <option value="Acessoria">Acessoria</option>
+              <option value="Formacao">Formação</option>
+            </select></container
+          >
+        </form>
+        <form class="div-text-pub">
+          <label for="">Título: </label>
+          <input class="textbox-titulo" type="text" />
+        </form>
       </div>
       <div class="content">
-        <label for="">Foto da capa: </label>
-        <input class="textbox-pub" type="file" />
-        <label for="">Sobre o trabalho: </label>
-        <input class="textbox-pub" type="text" />
-        <label for="">subtitulo: </label>
-        <input class="textbox-pub" type="text" />
+        <form class="div-text-pub">
+          <label for="">Foto da capa: </label>
+          <input type="file" />
+        </form>
+        <form class="div-text-pub">
+          <label for="">Sobre o trabalho: </label>
+          <textarea
+            class="textbox-grande"
+            rows="4"
+            cols="50"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+        </form>
+        <form class="div-text-pub">
+          <label for="">subtitulo: </label>
+          <textarea
+            class="textbox-subtitulo"
+            rows="4"
+            cols="50"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+        </form>
       </div>
       <div class="content">
-        <form>
+        <form class="div-text-pub">
           <label>Fotos:</label>
           <input type="file" name="files" id="fileInput" multiple />
         </form>
-        <label for="">Informações adicionais: </label>
-        <input class="textbox-pub" type="text" />
+        <form class="div-text-pub">
+          <label for="">Informações adicionais: </label>
+          <textarea
+            class="textbox-grande"
+            rows="4"
+            cols="50"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+        </form>
         <div class="div-text-pub">
           <label for="">Publicador: </label>
           <input class="textbox-pub" type="text" />
@@ -107,7 +139,7 @@
         </div>
       </div>
 
-      <div class="login-div">
+      <div class="btt-div">
         <button class="button-publicar" href="">Publicar</button>
         <button class="button-cancelar" href="">Cancelar</button>
       </div>

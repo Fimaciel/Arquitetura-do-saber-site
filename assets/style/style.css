@@ -636,8 +636,24 @@
     color: var(--cor-terciaria);
   }
   .publicador {
-    text-align: right;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+  }
+  .aalbum {
+    width: 60%;
+    padding: 35px;
+  }
+  .album {
+    width: 70%;
+  }
+
+  .container-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 716px) {
@@ -788,6 +804,7 @@
   .capa {
     width: 8%;
   }
+
   .loguit {
     background: url(Loguit.jpg);
     mix-blend-mode: multiply;
@@ -1172,8 +1189,21 @@
   }
   .publicador {
     text-align: right;
-    padding: 5px;
+    padding: 65px;
   }
+  .aalbum {
+    width: 40%;
+    padding: 35px;
+  }
+  .album {
+    width: 70%;
+  }
+
+  .container-post {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .sub-title {
     font-family: "Poppins";
     font-style: normal;
