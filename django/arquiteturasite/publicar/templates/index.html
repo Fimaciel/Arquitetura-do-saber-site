@@ -193,9 +193,7 @@
                 Educação, com ênfase na gestão administrativa e gestão
                 pedagógica.
               </p>
-              <a
-                class="button-placa"
-                href="{% static 'acessoriaCliente.html' %}"
+              <a class="button-placa" href="{% url 'acessoria' %}"
                 >Saiba mais</a
               >
             </div>
@@ -207,7 +205,7 @@
                 Ofereceremos formação de curta duração como palestras, oficinas
                 e workshop.
               </p>
-              <a class="button-placa" href="formacaoCliente.html">Saiba mais</a>
+              <a class="button-placa" href="{% url 'formacao' %}">Saiba mais</a>
             </div>
           </container>
         </section>
@@ -246,7 +244,7 @@
         <h1 class="footer-titulo">Arquitetura do Saber</h1>
         <p class="footer-text">©2023 thcomunicações.</p>
         <p class="footer-text">Todos os direitos reservados.</p>
-        <a href="login.html" class="footer-text">Login</a>
+        <a href="{% url 'login' %}" class="footer-text">Login</a>
       </div>
       <div class="footer">
         <img

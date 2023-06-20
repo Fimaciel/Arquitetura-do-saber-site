@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -7,8 +9,8 @@
       name="viewport"
       content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="assets/style/reset.css" />
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="{% static 'assets/style/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
     <link rel="icon" href="assets/imagens/icons/icon-web.svg" />
 
     <title>Arquitetura do Saber</title>
