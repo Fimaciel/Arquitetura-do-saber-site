@@ -19,3 +19,15 @@ def formacaoUser(request):
 
 def acessoria(request):
     return render(request, "acessoriaCliente.html")
+
+
+def acessoriaUser(request):
+    return render(request, "acessoriaUsuario.html")
+
+
+def homeUser(request):
+    return render(request, "homeUsuario.html")
+
+
+def publicar(request):
+    return render(request, "publicar.html")

@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Arquitetura do saber">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="{% static 'assets/style/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="icon" href="{% static 'assets/imagens/icons/icon-web.svg' %}" />
+
+    <title>Arquitetura do Saber</title>
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+
+    <script>
+      function menuShow() {
+        let menuMobile = document.querySelector(".mobile-menu");
+        if (menuMobile.classList.contains("open")) {
+          menuMobile.classList.remove("open");
+          document.querySelector(".icon").src = "{% static 'assets/imagens/icons/Icon.svg' %}";
+        } else {
+          menuMobile.classList.add("open");
+          document.querySelector(".icon").src = "{% static 'assets/imagens/icons/close.svg' %}";
+        }
+      }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="{% static 'assets/js/swiper.js' %}"></script>
+    <script src="{% static 'assets/js/upbnt.js' %}"></script>
+
+  </body>
+</html>

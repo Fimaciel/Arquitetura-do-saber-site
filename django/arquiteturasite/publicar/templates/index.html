@@ -1,266 +1,153 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="{% static 'assets/style/reset.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
-    <link
-      href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="{% static 'assets/imagens/icons/icon-web.svg' %}" />
+{% block content %}
+{% include 'partials/menu.html' %}
+<main>
+  <!---- capa home --->
+  <section id="home">
+    <button id="btn-topo">
+      <img
+        src="{% static 'assets/imagens/icons/upbnt.svg' %}"
+        alt="Para o topo"
+      />
+    </button>
 
-    <title>Arquitetura do Saber</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <div class="logo">
-          <a href="#home"
-            ><img
-              class="logo-menu"
-              src="{% static 'assets/imagens/loguit-menu.svg' %}"
-          /></a>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            src="{% static 'assets/imagens/capa1.svg' %}"
+            alt="Imagem"
+            class="swiper-slide-image"
+          />
         </div>
-        <div class="nav-list">
-          <ul>
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Início</a>
-            </li>
-            <li class="nav-item">
-              <a href="#sobrenos" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a href="#servicos" class="nav-link"> Serviços</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contato" class="nav-link"> Contato</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="mobile-menu-icon">
-          <button onclick="menuShow()">
-            <img
-              class="icon"
-              src="{% static 'assets/imagens/icons/Icon.svg' %}"
-            />
-          </button>
-        </div>
-      </nav>
-      <div class="mobile-menu">
-        <ul>
-          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-          <li class="nav-item">
-            <a href="#sobrenos" class="nav-link">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a href="#servicos" class="nav-link"> Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contato" class="nav-link"> Contato</a>
-          </li>
-        </ul>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 3</div>
       </div>
-    </header>
-    <main>
-      <!---- capa home --->
-      <section id="home">
-        <button id="btn-topo">
-          <img
-            src="{% static 'assets/imagens/icons/upbnt.svg' %}"
-            alt="Para o topo"
-          />
-        </button>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="{% static 'assets/imagens/capa1.svg' %}"
-                alt="Imagem"
-                class="swiper-slide-image"
-              />
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 3</div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+    <!---- titulo--->
+    <container class="container-flex container-flex-tamanho">
+      <img
+        class="loguit"
+        src="{% static 'assets/imagens/loguit.svg' %}"
+        alt="Logo"
+      />
+      <div class="container-flex-home">
+        <h1 class="sub-title">
+          UMA NOVA FORMA DE<br />
+          APRENDER<br />
+        </h1>
+        <a class="button-home" href="#servicos">Nossos Serviços</a>
+      </div>
+    </container>
+  </section>
+  <!---- Sobre nós--->
+  <section
+    id="sobrenos"
+    class="container-flex container-flex-tamanho body-azul"
+  >
+    <container class="container-separacao">
+      <div class="img_flexbox img">
+        <img
+          src="{% static 'assets/imagens/fotoequipe.svg' %}"
+          alt="Foto da Equipe"
+        />
+      </div>
+      <div class="container-titulo"></div>
+    </container>
+    <container>
+      <div class="text-normal">
+        <h1 class="title-bigblue">Sobre nós</h1>
+        <p>
+          A Arquitetura do Saber é uma organização comprometida com a educação
+          integral e de qualidade.
+        </p>
+        <p>
+          Movidos pelo sonho de impulsionar o potencial de todos os estudantes,
+          buscamos ofertar formação continuada para gestores públicos, gestores
+          escolares, educadores e demais profissionais da educação.
+        </p>
+        <p>
+          Os desafios são próprios em cada município, em cada escola. Para
+          atender as especificidades, criamos programas de formação sob medida,
+          de acordo com as necessidades e a realidade de cada instituição.
+        </p>
+        <p>
+          Nossa missão é contribuir com pessoas, instituições e com Poder
+          Público em iniciativas de amplo impacto que garantam a melhoria da
+          qualidade da educação e a aprendizagem de todos estudantes.
+        </p>
+        <p>
+          Nossa visão é sobre um país justo, no qual todos têm oportunidades de
+          ampliar o seu potencial, provoca impactos no mundo.
+        </p>
+      </div>
+    </container>
+  </section>
 
-        <!---- titulo--->
-        <container class="container-flex container-flex-tamanho">
-          <img
-            class="loguit"
-            src="{% static 'assets/imagens/loguit.svg' %}"
-            alt="Logo"
-          />
-          <div class="container-flex-home">
-            <h1 class="sub-title">
-              UMA NOVA FORMA DE<br />
-              APRENDER<br />
-            </h1>
-            <a class="button-home" href="#servicos">Nossos Serviços</a>
-          </div>
-        </container>
-      </section>
-      <!---- Sobre nós--->
-      <section
-        id="sobrenos"
-        class="container-flex container-flex-tamanho body-azul"
-      >
-        <container class="container-separacao">
-          <div class="img_flexbox img">
-            <img
-              src="{% static 'assets/imagens/fotoequipe.svg' %}"
-              alt="Foto da Equipe"
-            />
-          </div>
-          <div class="container-titulo"></div>
-        </container>
-        <container>
-          <div class="text-normal">
-            <h1 class="title-bigblue">Sobre nós</h1>
-            <p>
-              A Arquitetura do Saber é uma organização comprometida com a
-              educação integral e de qualidade.
-            </p>
-            <p>
-              Movidos pelo sonho de impulsionar o potencial de todos os
-              estudantes, buscamos ofertar formação continuada para gestores
-              públicos, gestores escolares, educadores e demais profissionais da
-              educação.
-            </p>
-            <p>
-              Os desafios são próprios em cada município, em cada escola. Para
-              atender as especificidades, criamos programas de formação sob
-              medida, de acordo com as necessidades e a realidade de cada
-              instituição.
-            </p>
-            <p>
-              Nossa missão é contribuir com pessoas, instituições e com Poder
-              Público em iniciativas de amplo impacto que garantam a melhoria da
-              qualidade da educação e a aprendizagem de todos estudantes.
-            </p>
-            <p>
-              Nossa visão é sobre um país justo, no qual todos têm oportunidades
-              de ampliar o seu potencial, provoca impactos no mundo.
-            </p>
-          </div>
-        </container>
-      </section>
-
-      <!---- Serviços--->
-      <section id="servicos" class="container-servicos">
-        <container>
-          <h1 class="title-bigblue">Serviços</h1>
-          <p class="text-contato">
-            Oferecemos serviços de formação continuada para gestores,<br />
-            professores e para equipes técnicas e equipes de apoio das escolas.
+  <!---- Serviços--->
+  <section id="servicos" class="container-servicos">
+    <container>
+      <h1 class="title-bigblue">Serviços</h1>
+      <p class="text-contato">
+        Oferecemos serviços de formação continuada para gestores,<br />
+        professores e para equipes técnicas e equipes de apoio das escolas.
+      </p>
+    </container>
+    <section class="container-servicos-flex">
+      <container class="placa">
+        <div class="dentro-placa1">
+          <h3 class="title-lilblack">ACESSORIAS</h3>
+          <p class="texto-menor">
+            Oferecemos assessoria pedagógica para as Secretarias de Educação,
+            com ênfase na gestão administrativa e gestão pedagógica.
           </p>
-        </container>
-        <section class="container-servicos-flex">
-          <container class="placa">
-            <div class="dentro-placa1">
-              <h3 class="title-lilblack">ACESSORIAS</h3>
-              <p class="texto-menor">
-                Oferecemos assessoria pedagógica para as Secretarias de
-                Educação, com ênfase na gestão administrativa e gestão
-                pedagógica.
-              </p>
-              <a class="button-placa" href="{% url 'acessoria' %}"
-                >Saiba mais</a
-              >
-            </div>
-          </container>
-          <container class="placa">
-            <div class="dentro-placa2">
-              <h3 class="title-lilblack">FORMAÇÃO</h3>
-              <p class="texto-menor">
-                Ofereceremos formação de curta duração como palestras, oficinas
-                e workshop.
-              </p>
-              <a class="button-placa" href="{% url 'formacao' %}">Saiba mais</a>
-            </div>
-          </container>
-        </section>
-      </section>
-      <!---- Depoimento--->
-      <section class="body-azul depoimentos">
-        <h1 class="title-lilblack">Depoimentos de quem já passou por aqui!</h1>
-        <div class="container-flex">
-          <container class="depoimento-placa">
-            <div class="placas-depoimento">
-              <p class="depoimento-text">
-                <strong>"</strong> Minha Escola melhorou muito o rendimento
-                desde as palestras realizadas pela a arquitetura do saber!
-              </p>
-              <div class="dentro-placa">
-                <h3 class="depoimento-nome">Nome sobrenome</h3>
-              </div>
-            </div>
-          </container>
-          <container class="depoimento-placa">
-            <div class="placas-depoimento">
-              <p class="depoimento-text">
-                <strong>"</strong> Minha Escola melhorou muito o rendimento
-                desde as palestras realizadas pela a arquitetura do saber!
-              </p>
-              <div class="dentro-placa">
-                <h3 class="depoimento-nome">Nome sobrenome</h3>
-              </div>
-            </div>
-          </container>
+          <a class="button-placa" href="{% url 'acessoria' %}">Saiba mais</a>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <h1 class="footer-titulo">Arquitetura do Saber</h1>
-        <p class="footer-text">©2023 thcomunicações.</p>
-        <p class="footer-text">Todos os direitos reservados.</p>
-        <a href="{% url 'login' %}" class="footer-text">Login</a>
+      </container>
+      <container class="placa">
+        <div class="dentro-placa2">
+          <h3 class="title-lilblack">FORMAÇÃO</h3>
+          <p class="texto-menor">
+            Ofereceremos formação de curta duração como palestras, oficinas e
+            workshop.
+          </p>
+          <a class="button-placa" href="{% url 'formacao' %}">Saiba mais</a>
+        </div>
+      </container>
+    </section>
+  </section>
+  <!---- contato--->
+  <section id="contato" class="container-contato body-azul">
+    <div class="div-contato">
+      <h1 class="title-midblack">Entre em contato com a gente!</h1>
+      <h3 class="subtitle-black">
+        Entre em contato com a Arquitetura do Saber, queremos tirar suas
+        dúvidas, ouvir suas críticas e sugestões.
+      </h3>
+    </div>
+    <container class="contato-icons">
+      <div class="icon-row">
+        <img src="{% static 'assets/imagens/icons/mail.svg' %}" alt="Email-Icon" />
+        <p class="text-azul">thcomuca22@gmail.com</p>
       </div>
-      <div class="footer">
-        <img
-          src="{% static 'assets/imagens/icons/mail-branco.svg' %}"
-          alt="Email"
-        />
-        <img
-          src="{% static 'assets/imagens/icons/whatsapp-branco.svg' %}"
-          alt="Telefone"
-        />
+      <div class="icon-row">
+        <img src="{% static 'assets/imagens/icons/whatsapp.svg' %}" alt="Telefone-Icon" />
+        <p class="text-azul">69-9 8406-0760</p>
       </div>
-
-      <script src="{% static 'assets/js/script.js' %}"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <script src="{% static 'assets/js/swiper.js' %}"></script>
-      <script src="{% static 'assets/js/upbnt.js' %}"></script>
-    </footer>
-  </body>
-</html>
+    </container>
+  </section>
+</main>
+{% include 'partials/footer.html' %} {% endblock %}

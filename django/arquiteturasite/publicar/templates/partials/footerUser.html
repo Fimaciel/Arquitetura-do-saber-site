@@ -1,0 +1,19 @@
+{% load static %}
+<footer>
+    <div class="footer">
+      <h1 class="footer-titulo">Arquitetura do Saber</h1>
+      <p class="footer-text">©2023 thcomunicações.</p>
+      <p class="footer-text">Todos os direitos reservados.</p>
+      <a href="{% url 'login' %}" class="footer-text">Sair</a>
+    </div>
+    <div class="footer">
+        <img
+          src="{% static 'assets/imagens/icons/mail-branco.svg' %}"
+          alt="Email"
+        />
+        <img
+          src="{% static 'assets/imagens/icons/whatsapp-branco.svg' %}"
+          alt="Telefone"
+        />
+      </div>
+  </footer>
