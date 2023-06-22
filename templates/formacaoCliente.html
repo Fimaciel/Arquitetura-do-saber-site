@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="{% static 'assets/style/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/style/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/imagens/icons/icon-web.svg" />
+
+    <title>Arquitetura do Saber</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"
+            ><img class="logo-menu" src="assets/imagens/loguit-menu.svg"
+          /></a>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobrenos" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicos" class="nav-link"> Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contato" class="nav-link"> Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/imagens/icons/Icon.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item">
+            <a href="#sobrenos" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link"> Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link"> Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- textos da pagina -->
+      <img class="capa-for" src="assets/imagens/Capa3.svg" />
+      <section class="container-for">
+        <div class="container-flex-home">
+          <h1 class="title-for">Como são as formações</h1>
+          <p class="texto-menor">Acessorias são coisas legais muito legais</p>
+        </div>
+        <div class="container-flex-home">
+          <h1 class="title-for">Beneficios</h1>
+          <p class="texto-menor">Acessorias são coisas legais muito legais</p>
+        </div>
+      </section>
+      <!--- Publicações-->
+      <section id="Postagens" class="Postagens">
+        <form class="form">
+          <input class="input" type="text" placeholder="Pesquisar" />
+          <button class="button" type="submit">
+            <img src="assets/imagens/icons/search.svg" alt="" />
+          </button>
+        </form>
+      </section>
+      <section class="publi-lateral">
+        {% for chave,valor in nome_forma.items %}
+        <div class="div-card">
+          <a class="link-post" href="postpalestraCliente.html">
+            <div class="formacao-card">
+              <img
+                class="img-car"
+                src="assets/imagens/children-g206872d98_1280.svg"
+                alt="Capa do trabalho em Cacoal"
+              />
+              <h1 class="titulo-card">{{ valor }}</h1>
+              <div class="login-div">
+                <p class="texto-card">Publicado: Helen</p>
+                <p class="texto-card">Data: 20/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {% endfor %}
+        <div class="pagination">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <h1 class="footer-titulo">Arquitetura do Saber</h1>
+        <p class="footer-text">©2023 thcomunicações.</p>
+        <p class="footer-text">Todos os direitos reservados.</p>
+      </div>
+      <div class="footer">
+        <img src="assets/imagens/icons/mail-branco.svg" alt="Email" />
+        <img src="assets/imagens/icons/whatsapp-branco.svg" alt="Telefone" />
+      </div>
+
+      <script src="assets/js/script.js"></script>
+    </footer>
+  </body>
+</html>

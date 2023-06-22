@@ -10,7 +10,14 @@ def login(request):
 
 
 def formacao(request):
-    return render(request, "formacaoCliente.html")
+    formacoes = {
+        1: "Tabalho em Cacoal",
+        2: "Trabalho em Ji-Paraná",
+        3: "Trabalho em Ouro Preto",
+        4: "Trabalho em Ariquemis",
+    }
+    dados = {"nome_forma": formacoes}
+    return render(request, "formacaoCliente.html", dados)
 
 
 def formacaoUser(request):
